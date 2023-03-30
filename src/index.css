@@ -1,0 +1,64 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  background: radial-gradient(
+    at 50% 100%,
+    #c5a7d9 0%,
+    #623fad 40%,
+    #5214d9 80%,
+    #6a59d9 100%
+  );
+}
+
+a {
+  color: black;
+}
+
+input[type="range"] {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: black;
+  border-radius: 5px;
+  width: 100%;
+  height: 2px;
+  outline: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #000;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1);
+}
+
+/* Gradient Test */
+/* body {
+  background: rgb(131, 58, 180);
+  background: radial-gradient(
+    circle,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(29, 41, 253, 1) 0%,
+    rgba(252, 69, 248, 1) 100%
+  );
+} */
