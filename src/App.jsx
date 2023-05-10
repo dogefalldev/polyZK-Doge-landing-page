@@ -14,7 +14,7 @@ import Overlay from "./layout/Overlay";
 // Doggo 3D Model
 const Model = ({ z, scale }) => {
   const ref = useRef();
-  const { nodes, materials } = useGLTF("/doge-transformed.glb");
+  const { nodes, materials } = useGLTF("/suilogo.webp");
   const [clicked, setClicked] = useState(false);
 
   const { viewport, camera } = useThree();
